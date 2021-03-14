@@ -8,9 +8,9 @@ Simple android app :
 
   Uses European Central Bank API (working days Monday to Friday) for retrieving data
 
-  implements third party libraries : okhttp3:okhttp:4.9.0 , MPAndroidChart:v3.1.0
+  Implements third party libraries : okhttp3:okhttp:4.9.0 , MPAndroidChart:v3.1.0
  
-  compatible with min API 21 to API 30
+  Compatible with min API 21 to API 30
  
 ![small](https://user-images.githubusercontent.com/72970345/111067591-b41e9f80-84cd-11eb-9c79-ba528286433c.jpg)
 
