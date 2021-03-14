@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/firstItem"
+        android:title="@string/refresh_rate"
+        app:showAsAction="never"
+        android:background="@color/turquoise">
+
+        <menu>
+            <item android:id="@+id/threeseconds"
+                android:title="@string/three_sec"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/fiveseconds"
+                android:title="@string/five_sec"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/fifteenseconds"
+                android:title="@string/fifteen_sec"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+    <item android:id="@+id/secondItem"
+        android:title="@string/base_coin"
+        app:showAsAction="never"
+        android:background="@color/turquoise"/>
+</menu>

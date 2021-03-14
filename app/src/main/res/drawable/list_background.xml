@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle">
+
+            <solid android:color="@color/turquoise"/>
+
+        </shape>
+    </item>
+
+
+    <item android:top="5dp"
+        android:bottom="5dp"
+        >
+        <shape
+            android:shape="rectangle">
+            <!-- Set the background color of your layout here -->
+            <solid android:color="@color/blackish" />
+            <corners android:bottomRightRadius="12dp"
+                android:topRightRadius="12dp"
+                android:bottomLeftRadius="12dp"
+                android:topLeftRadius="12dp"/>
+        </shape>
+    </item>
+</layer-list>

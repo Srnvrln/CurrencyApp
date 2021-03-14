@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CurrencyApp</string>
+    <string name="launch_button"> COIN CHARTS </string>
+    <string name="close_button"> CLOSE </string>
+    <string name="refresh_rate">Refresh Rate</string>
+    <string name="three_sec">every 3 sec</string>
+    <string name="five_sec">every 5 sec</string>
+    <string name="fifteen_sec">every 15 sec</string>
+    <string name="base_coin">Base Coin</string>
+</resources>
