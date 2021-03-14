@@ -1,3 +1,4 @@
+
      CURRENCYAPP
 
 Simple android app :
@@ -11,4 +12,11 @@ Simple android app :
  
   compatible with min API 21 to API 30
  
- 
+![small](https://user-images.githubusercontent.com/72970345/111067591-b41e9f80-84cd-11eb-9c79-ba528286433c.jpg)
+
+
+
+![small2](https://user-images.githubusercontent.com/72970345/111067654-f1832d00-84cd-11eb-8006-acb55e88fcdc.jpg)
+
+
+
