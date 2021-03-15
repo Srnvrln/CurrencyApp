@@ -223,7 +223,7 @@ public class CustomChartFragment extends Fragment {
                 LocalDate.of(2021,12,26), LocalDate.of(2021,12,31),};
 
         //check if local time is behind bank update hour
-        if(now.compareTo(LocalTime.of(17, 0)) < 0) checkIfTodayIsAvailable = 1;
+        if(now.compareTo(LocalTime.of(17, 45)) < 0) checkIfTodayIsAvailable = 1;
 
         int count = 0+checkIfTodayIsAvailable; // if local time is behind update hour start count from the day before
         int amountOfWorkingDays = 0;
