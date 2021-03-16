@@ -5,6 +5,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     private String lastDate = "";
 
 
-    private  Handler refreshHandling = new Handler();
+    private  final Handler refreshHandling = new Handler(Looper.getMainLooper());
     Runnable runnable;
 
     private ArrayList<String> countryAndLocalCurrency;
@@ -117,7 +118,6 @@ public class MainActivity extends AppCompatActivity {
 
         countryAndLocalCurrency = new ArrayList<>();
         rates = new ArrayList<>();
-        refreshHandling = new Handler();
         showUpdate = findViewById(R.id.showLastUpdate);
         customDialog = new CustomDialog();
 
