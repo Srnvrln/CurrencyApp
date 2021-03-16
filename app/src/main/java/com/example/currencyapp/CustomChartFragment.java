@@ -36,6 +36,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -118,7 +119,10 @@ public class CustomChartFragment extends Fragment {
 
         String baseURL = "https://api.exchangeratesapi.io/history?";
         StringBuilder json = new StringBuilder();
-        OkHttpClient client = new OkHttpClient();
+        OkHttpClient client = new OkHttpClient.Builder()
+                .connectTimeout(8, TimeUnit.SECONDS)
+                .readTimeout(8,TimeUnit.SECONDS)
+                .build();
 
         //determining time range for charts for the last 10 working days
         LocalDate atThisMoment = LocalDate.now();

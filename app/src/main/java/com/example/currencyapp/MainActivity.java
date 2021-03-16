@@ -36,6 +36,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -162,7 +163,10 @@ public class MainActivity extends AppCompatActivity {
         //change url according to user choice
         if(!baseCoin.equals("EUR")) url = url+"?base="+baseCoin;
 
-        OkHttpClient client = new OkHttpClient();
+        OkHttpClient client = new OkHttpClient.Builder()
+                             .connectTimeout(8, TimeUnit.SECONDS)
+                             .readTimeout(8,TimeUnit.SECONDS)
+                             .build();
         Request req = new Request.Builder()
                       .url(url)
                       .build();
